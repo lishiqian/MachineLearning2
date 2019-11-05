@@ -17,6 +17,7 @@ def add_layer(intputs, in_size, out_size, activation_func=None):
 x_data = np.linspace(-1, 1, 300)[:, np.newaxis]
 noise = np.random.normal(0, 0.05, x_data.shape)
 y_data = np.square(x_data) - 0.5 + noise
+# y_data = np.square(x_data) - 0.5
 
 xs = tf.placeholder(tf.float32, [None, 1])
 ys = tf.placeholder(tf.float32, [None, 1])
@@ -33,6 +34,8 @@ fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
 ax.scatter(x_data, y_data)
 plt.ion()
+plt.xlim(-1.2, 1.2)
+plt.ylim(-1, 1)
 plt.show(block=False)
 
 with tf.Session() as sess:
