@@ -1,5 +1,5 @@
-from src.reinforcement_demo.maze_game.maze_env import Maze
-from src.reinforcement_demo.maze_game.RL_brain import QLearningTable
+from src.reinforcement_demo.RL_02_Q_learning_maze.maze_env import Maze
+from src.reinforcement_demo.RL_02_Q_learning_maze.RL_brain import QLearningTable
 
 
 def update():
