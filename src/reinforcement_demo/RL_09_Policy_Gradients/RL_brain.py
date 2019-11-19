@@ -106,5 +106,7 @@ class PolicyGradient(object):
 
         # normalize episode rewards
         discounted_ep_rs -= np.mean(discounted_ep_rs)
+        # np.std 计算全局标准差
         discounted_ep_rs /= np.std(discounted_ep_rs)
+
         return discounted_ep_rs
