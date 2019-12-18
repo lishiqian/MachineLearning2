@@ -41,7 +41,7 @@ for i_episode in range(1000):
     observation = env.reset()
 
     while True:
-        # if RENDER: env.render()
+        if RENDER: env.render()
 
         action = RL.choose_action(observation)
 

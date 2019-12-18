@@ -11,7 +11,7 @@ import gym
 from src.reinforcement_demo.RL_09_Policy_Gradients.RL_brain import PolicyGradient
 import matplotlib.pyplot as plt
 
-DISPLAY_REWARD_THRESHOLD = 400  # renders environment if total episode reward is greater then this threshold
+DISPLAY_REWARD_THRESHOLD = 150  # renders environment if total episode reward is greater then this threshold
 # DISPLAY_REWARD_THRESHOLD = 0  # renders environment if total episode reward is greater then this threshold
 RENDER = False  # rendering wastes time
 

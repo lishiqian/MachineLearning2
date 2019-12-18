@@ -83,7 +83,7 @@ class PolicyGradient(object):
     # 学习更新参数 (有改变)
     def learn(self):
         # 衰减, 并标准化这回合的 reward
-        discounted_ep_rs_norm = self._discount_and_norm_rewards()  # 功能再面
+        discounted_ep_rs_norm = self._discount_and_norm_rewards()  # 功能再下面
 
         # train on episode
         self.sess.run(self.train_op, feed_dict={
