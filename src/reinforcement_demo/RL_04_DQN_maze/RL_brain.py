@@ -31,7 +31,7 @@ class DeepQNetwork(object):
         self.learn_step_counter = 0
 
         # 初始化全 0 记忆 [s, a, r, s_]
-        # n_features * 2 + 2  n_featueres=2 宽和高（当前位置2个数值 下一个位置4个数值 动作1个 奖励一个）
+        # n_features * 2 + 2  n_featueres=2 宽和高（当前位置4个数值 下一个位置4个数值 动作1个 奖励一个）
         self.memory = np.zeros((self.memory_size, n_features * 2 + 2))
 
         # consist of [target_net, evaluate_net]

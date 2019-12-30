@@ -51,7 +51,7 @@ if __name__ == "__main__":
                       e_greedy=0.9,
                       replace_target_iter=200,  # 每 200 步替换一次 target_net 的参数
                       memory_size=2000,  # 记忆上限
-                      # output_graph=True   # 是否输出 tensorboard 文件
+                      output_graph=False   # 是否输出 tensorboard 文件
                       )
     env.after(100, update)
     env.mainloop()
