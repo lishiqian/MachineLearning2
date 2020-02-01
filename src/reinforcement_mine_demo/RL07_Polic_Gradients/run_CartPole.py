@@ -20,7 +20,7 @@ RL = PolicGradient(
     n_features=env.observation_space.shape[0],
     learning_rate=0.02,
     reward_decay=0.98,
-    output_graph=True
+    output_graph=False
 )
 
 for i_episode in range(3000):
